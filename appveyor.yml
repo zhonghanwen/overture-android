@@ -40,7 +40,7 @@ for:
      - "wget https://github.com/golang/go/archive/refs/tags/go1.15.12.zip"
      - "unzip go1.15.12.zip"
      - "mv go-go1.15.12 go"
-     - "sudo ./make.bash"
+     - "sudo ./make.bash 21"
 #     - "python $ANDROID_NDK_ROOT/build/tools/make_standalone_toolchain.py --api=16 --install-dir=$ANDROID_NDK_ROOT/bin/arm-linux-androideabi/ --arch=arm"
 #     - "python $ANDROID_NDK_ROOT/build/tools/make_standalone_toolchain.py --api=21 --install-dir=$ANDROID_NDK_ROOT/bin/aarch64-linux-android/ --arch=arm64"
 #     - "python $ANDROID_NDK_ROOT/build/tools/make_standalone_toolchain.py --api=16 --install-dir=$ANDROID_NDK_ROOT/bin/i686-linux-android/ --arch=x86"
