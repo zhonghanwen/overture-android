@@ -4,7 +4,7 @@ function try () {
 "$@" || exit -1
 }
 
-[ -z "$ANDROID_NDK_HOME" ] && ANDROID_NDK_HOME=~/android-ndk-r12b
+[ -z "$ANDROID_NDK_HOME" ] && ANDROID_NDK_HOME=~/android-ndk-r16b
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 MIN_API=$1
@@ -58,9 +58,9 @@ export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
 
 echo "Get dependences for overture"
 go get -u github.com/tools/godep
-go get -u github.com/shadowsocks/overture/main
+go get -u github.com/shawn1m/overture/main
 
-pushd $GOPATH/src/github.com/shadowsocks/overture/main
+pushd $GOPATH/src/github.com/shawn1m/overture/main
 godep restore
 
 echo "Cross compile overture for arm"
